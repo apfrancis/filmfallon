@@ -1,0 +1,40 @@
+---
+id: about
+title: About
+active_about: true
+video: 64295760
+
+position: Company Director
+name: Ryan Fallon
+tel: +44 (0)7815523567
+email: filmfallon@gmail.com
+vimeo: http://vimeo.com/filmfallon
+facebook: http://www.facebook.com/filmfallon
+twitter: http://www.twitter.com/filmfallon
+flickr: http://flickr.com/photos/filmfallon
+tumblr: http://filmfallon.tumblr.com
+---
+<div class="two-column">
+
+
+    <div class="content about">
+        <p class="active">{{ position }}</p>
+        <p>{{ name }}</p>
+        <p>{{ tel }}</p>
+        <br />
+        <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+        <br />
+        <div class="social">
+            <p><a href="{{ vimeo }}" target="_blank">Vimeo</a></p>
+            <p><a href="{{ facebook }}" target="_blank">Facebook</a></p>
+            <p><a href="{{ twitter }}" target="_blank">Twitter</a></p>
+            <p><a href="{{ flickr }}" target="_blank">Flickr</a></p>
+            <p><a href="{{ tumblr }}" target="_blank">Tumblr</a></p>
+        </div>
+    </div>
+    <div class="showreel">
+        <iframe style="width:100%;height:100%;" src="//player.vimeo.com/video/{{ video }}" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+</div>
