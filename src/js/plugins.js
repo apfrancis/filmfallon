@@ -26,28 +26,25 @@ window.backgrounds = (function(){
 
     var init = function(durationInMs, fadeInMs){
         var duration    = durationInMs || 6000,
-            fade        = fadeInMs || 1000,
-            smalliOS    = /(iPhone|iPod)/g.test( navigator.userAgent);
+            fade        = fadeInMs || 1000;
 
-//        if(!smalliOS){
-            $('body').backstretch([
-                'images/hpbg_1.jpg',
-                'images/hpbg_2.jpg',
-                'images/hpbg_3.jpg',
-                'images/hpbg_4.jpg',
-                'images/hpbg_5.jpg',
-                'images/hpbg_6.jpg',
-                'images/hpbg_7.jpg',
-                'images/hpbg_8.jpg',
-                'images/hpbg_9.jpg',
-                'images/hpbg_10.jpg',
-                'images/hpbg_11.jpg',
-                'images/hpbg_12.jpg',
-                'images/hpbg_13.jpg',
-                'images/hpbg_14.jpg',
-                'images/hpbg_15.jpg'
-            ], {duration: duration, fade: fade});
-//        }
+        $('body').backstretch([
+            'images/hpbg_1.jpg',
+            'images/hpbg_2.jpg',
+            'images/hpbg_3.jpg',
+            'images/hpbg_4.jpg',
+            'images/hpbg_5.jpg',
+            'images/hpbg_6.jpg',
+            'images/hpbg_7.jpg',
+            'images/hpbg_8.jpg',
+            'images/hpbg_9.jpg',
+            'images/hpbg_10.jpg',
+            'images/hpbg_11.jpg',
+            'images/hpbg_12.jpg',
+            'images/hpbg_13.jpg',
+            'images/hpbg_14.jpg',
+            'images/hpbg_15.jpg'
+        ], {duration: duration, fade: fade});
     };
 
     return {
@@ -65,14 +62,6 @@ window.navigation = (function(){
             $(togglable).toggleClass('visible');
         });
     };
-
-    var toggleNavigation = function(selector){
-        $(selector).toggle();
-    };
-
-    var shouldHideNavigation = function(){
-        return ($('body').hasClass('homepage') || $('body').hasClass('about'));
-    }
 
     var init = function(selector){
         addListeners('#clients',selector);
